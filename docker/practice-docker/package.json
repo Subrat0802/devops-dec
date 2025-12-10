@@ -1,0 +1,22 @@
+{
+  "name": "docker",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "node ./dist/index.js",
+    "start": "npm run build && npm run dev"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.5",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^24.10.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.3",
+    "typescript": "^5.9.3"
+  }
+}
