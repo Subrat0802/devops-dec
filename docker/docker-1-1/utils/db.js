@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
+require("dotenv").config;
+
 
 exports.dbConnect = () => {
-    mongoose.connect("mongodb://mongo:27017/dockertwo").then(() => {
+    mongoose.connect(process.env.MONGODB_URL).then(() => {
         console.log("db connected")
     }).catch((error) => {
         console.log("Error while connecting to db");

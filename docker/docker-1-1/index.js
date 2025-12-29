@@ -50,3 +50,6 @@ app.post("/signup", async (req, res) => {
 app.listen(3000, () => {
     console.log("App is running at port 3000");
 })
+
+
+//docker compose up build
