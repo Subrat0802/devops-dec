@@ -1,0 +1,21 @@
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data_pull:/data/db
+
+  backend:
+    image: subrat08/backend:latest
+    container_name: backend_app_pull
+    depends_on:
+      - mongodb
+    ports:
+      - "3000:3000"
+    environment:
+      MONGODB_URL: mongodb://mongodb:27017/backend-app-pull
+
+volumes:
+  mongodb_data_pull:
