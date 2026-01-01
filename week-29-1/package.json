@@ -1,0 +1,17 @@
+{
+  "name": "week-29-1",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-auto-scaling": "^3.958.0",
+    "@types/dotenv": "^8.2.3",
+    "dotenv": "^17.2.3"
+  }
+}
